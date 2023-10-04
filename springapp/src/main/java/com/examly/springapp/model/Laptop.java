@@ -28,7 +28,7 @@ public class Laptop {
                                                                                                     return laptopBrand;
                                                                                                         }
 
-                                                                                                            public void setLaptopBrand(String laptopBrand) {
+                                                                                                        public void setLaptopBrand(String laptopBrand) {
                                                                                                                     this.laptopBrand = laptopBrand;
                                                                                                                         }
 
@@ -40,4 +40,3 @@ public class Laptop {
                                                                                                                                                     this.laptopPrice = laptopPrice;
                                                                                                                                                         }
                                                                                                                                                         }
-                                                                                                                                                        
