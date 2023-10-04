@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: com.examly.springapp.SpringappApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 4.523 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
-testAdd  Time elapsed: 0.497 s  <<< FAILURE!
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 4.391 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
+testAdd  Time elapsed: 0.485 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.testAdd(SpringappApplicationTests.java:33)
 
-testGetAll  Time elapsed: 0.035 s  <<< FAILURE!
+testGetAll  Time elapsed: 0.002 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.testGetAll(SpringappApplicationTests.java:61)
 
-testGetOne  Time elapsed: 0.013 s  <<< FAILURE!
+testGetOne  Time elapsed: 0.01 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.testGetOne(SpringappApplicationTests.java:53)
 
