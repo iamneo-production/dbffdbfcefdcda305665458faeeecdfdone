@@ -1,26 +1,31 @@
-package com.example.demo.service;
+package com.examly.springapp.service;
 
-import com.example.demo.model.Laptop;
+import com.examly.springapp.model.Laptop;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+@Service
 public class ApiService {
-    private List<Laptop> laptopList = new ArrayList<>();
+    private final Map<Integer, Laptop> laptopMap = new HashMap<>();
 
-        public Laptop addLaptop(Laptop laptop) {
-                laptopList.add(laptop);
-                        return laptop;
-                            }
+        public boolean addLaptop(Laptop laptop) {
+                if (laptopMap.containsKey(laptop.getLaptopId())) {
+                            return false; // Laptop with the same ID already exists
+                                    }
+                                            laptopMap.put(laptop.getLaptopId(), laptop);
+                                                    return true;
+                                                        }
 
-                                public Laptop getLaptop(int laptopId) {
-                                        return laptopList.stream()
-                                                        .filter(laptop -> laptop.getLaptopId() == laptopId)
-                                                                        .findFirst()
-                                                                                        .orElse(null);
-                                                                                            }
+                                                            public Laptop getLaptopById(int laptopId) {
+                                                                    return laptopMap.getOrDefault(laptopId, null);
+                                                                        }
 
-                                                                                                public List<Laptop> getAllLaptops() {
-                                                                                                        return laptopList;
-                                                                                                            }
-                                                                                                            }
+                                                                            public List<Laptop> getAllLaptops() {
+                                                                                    return new ArrayList<>(laptopMap.values());
+                                                                                        }
+                                                                                        }
+                                                                                        

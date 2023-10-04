@@ -1,46 +1,43 @@
-package com.example.demo.model;
+package com.examly.springapp.model;
 
 public class Laptop {
     private int laptopId;
         private String laptopBrand;
             private int laptopPrice;
 
-                public Laptop(int laptopId, String laptopBrand, int laptopPrice) {
-                        this.laptopId = laptopId;
-                                this.laptopBrand = laptopBrand;
-                                        this.laptopPrice = laptopPrice;
-                                            }
+                public Laptop() {
+                    }
 
-                                                public int getLaptopId() {
-                                                        return laptopId;
-                                                            }
+                        public Laptop(int laptopId, String laptopBrand, int laptopPrice) {
+                                this.laptopId = laptopId;
+                                        this.laptopBrand = laptopBrand;
+                                                this.laptopPrice = laptopPrice;
+                                                    }
 
-                                                                public void setLaptopId(int laptopId) {
-                                                                        this.laptopId = laptopId;
-                                                                            }
+                                                        // Getters and setters
 
-                                                                                public String getLaptopBrand() {
-                                                                                        return laptopBrand;
-                                                                                            }
+                                                            public int getLaptopId() {
+                                                                    return laptopId;
+                                                                        }
 
-                                                                                                public void setLaptopBrand(String laptopBrand) {
-                                                                                                        this.laptopBrand = laptopBrand;
-                                                                                                            }
+                                                                            public void setLaptopId(int laptopId) {
+                                                                                    this.laptopId = laptopId;
+                                                                                        }
 
-                                                                                                                public int getLaptopPrice() {
-                                                                                                                        return laptopPrice;
-                                                                                                                            }
+                                                                                            public String getLaptopBrand() {
+                                                                                                    return laptopBrand;
+                                                                                                        }
 
-                                                                                                                                public void setLaptopPrice(int laptopPrice) {
-                                                                                                                                        this.laptopPrice = laptopPrice;
-                                                                                                                                            }
+                                                                                                            public void setLaptopBrand(String laptopBrand) {
+                                                                                                                    this.laptopBrand = laptopBrand;
+                                                                                                                        }
 
-                                                                                                                                                @Override
-                                                                                                                                                    public String toString() {
-                                                                                                                                                            return "Laptop{" +
-                                                                                                                                                                            "laptopId=" + laptopId +
-                                                                                                                                                                                            ", laptopBrand='" + laptopBrand + '\'' +
-                                                                                                                                                                                                            ", laptopPrice=" + laptopPrice +
-                                                                                                                                                                                                                            '}';
-                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                }
+                                                                                                                            public int getLaptopPrice() {
+                                                                                                                                    return laptopPrice;
+                                                                                                                                        }
+
+                                                                                                                                            public void setLaptopPrice(int laptopPrice) {
+                                                                                                                                                    this.laptopPrice = laptopPrice;
+                                                                                                                                                        }
+                                                                                                                                                        }
+                                                                                                                                                        
